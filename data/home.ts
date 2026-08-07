@@ -17,6 +17,14 @@ export type ExpertiseItem = {
   description: string
 }
 
+export type ContactContent = {
+  title: string
+  description: string
+  ctaLabel: string
+  ctaHref: string
+  supportText: string
+}
+
 export const trustIndicators: TrustIndicator[] = [
   {
     title: "Automation strategy aligned with product goals",
@@ -62,6 +70,11 @@ export const sectionLinks: SectionLink[] = [
     title: "Core expertise",
     description: "The skills and systems I bring to execution and strategy.",
   },
+  {
+    href: "#contact",
+    title: "Contact",
+    description: "Reach out to discuss quality engineering leadership and automation strategy.",
+  },
 ]
 
 export const philosophyItems: PhilosophyItem[] = [
@@ -99,6 +112,15 @@ export const expertiseItems: ExpertiseItem[] = [
       "Aligning product, engineering, and QA to drive clear expectations and measurable outcomes.",
   },
 ]
+
+export const contactContent: ContactContent = {
+  title: "Let’s talk about your next quality engineering initiative.",
+  description:
+    "I help teams define automation strategy, build resilient test platforms, and accelerate delivery with confidence.",
+  ctaLabel: "Email Goldi",
+  ctaHref: "mailto:hello@goldisaini.com",
+  supportText: "Typical response time is within one business day.",
+}
 
 export const heroContent: HeroContent = {
   eyebrow: "Quality engineering leadership",
