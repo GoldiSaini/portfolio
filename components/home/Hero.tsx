@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/section"
 import { SectionHeader } from "@/components/ui/section-header"
 import { Text } from "@/components/ui/typography"
 import { Button } from "@/components/ui/button"
+import { ButtonGroup } from "@/components/ui/button-group"
 import type { HeroContent } from "@/data/home"
 
 type HeroProps = {
@@ -19,12 +20,12 @@ export default function Hero({ content }: HeroProps) {
             title={content.title}
             description={content.description}
           />
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+          <ButtonGroup className="mt-10">
             <Button size="lg">{content.primaryCtaLabel}</Button>
             <Button variant="outline" size="lg">
               {content.secondaryCtaLabel}
             </Button>
-          </div>
+          </ButtonGroup>
           <Text className="mt-6" variant="muted">
             {content.footerText}
           </Text>
