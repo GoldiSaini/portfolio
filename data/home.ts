@@ -35,6 +35,29 @@ export const trustIndicators: TrustIndicator[] = [
   },
 ]
 
+export type PhilosophyItem = {
+  title: string
+  description: string
+}
+
+export const philosophyItems: PhilosophyItem[] = [
+  {
+    title: "Quality as an investment",
+    description:
+      "Build testing and automation that becomes a long-term asset, not a short-term cost.",
+  },
+  {
+    title: "Systems over scripts",
+    description:
+      "Focus on architecture, observability, and feedback loops before writing the first test case.",
+  },
+  {
+    title: "Collaboration first",
+    description:
+      "Embed quality practices into cross-functional workflows so engineering work is owned together.",
+  },
+]
+
 export const expertiseItems: ExpertiseItem[] = [
   {
     title: "Automation architecture",
