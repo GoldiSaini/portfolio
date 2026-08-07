@@ -12,6 +12,11 @@ export type TrustIndicator = {
   description: string
 }
 
+export type ExpertiseItem = {
+  title: string
+  description: string
+}
+
 export const trustIndicators: TrustIndicator[] = [
   {
     title: "Automation strategy aligned with product goals",
@@ -27,6 +32,24 @@ export const trustIndicators: TrustIndicator[] = [
     title: "Engineering leadership with clarity",
     description:
       "Communicating complex quality initiatives in a way that stakeholders trust and adopt.",
+  },
+]
+
+export const expertiseItems: ExpertiseItem[] = [
+  {
+    title: "Automation architecture",
+    description:
+      "Building reusable platforms and frameworks that reduce maintenance and increase developer productivity.",
+  },
+  {
+    title: "Release confidence",
+    description:
+      "Designing observability, validation, and flow so teams ship more often without compromising quality.",
+  },
+  {
+    title: "Cross-team collaboration",
+    description:
+      "Aligning product, engineering, and QA to drive clear expectations and measurable outcomes.",
   },
 ]
 
