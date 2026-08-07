@@ -42,3 +42,6 @@ Assume I am a backend/testing engineer who is learning React from scratch.
 
 The repository should eventually look like a production application that could be maintained by a professional frontend team.
 
+2. 
+
+ok, but keep in mind we have to keep it reuable and maintainable and production grade and design system should be build

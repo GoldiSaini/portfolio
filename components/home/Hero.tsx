@@ -1,20 +1,32 @@
 import Container from "@/components/common/Container"
 import { Section } from "@/components/ui/section"
-import { Heading, Text } from "@/components/ui/typography"
+import { SectionHeader } from "@/components/ui/section-header"
+import { Text } from "@/components/ui/typography"
+import { Button } from "@/components/ui/button"
+import type { HeroContent } from "@/data/home"
 
-export default function Hero() {
+type HeroProps = {
+  content: HeroContent
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <Section className="pt-14 sm:pt-18" variant="default">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <Text variant="label">
-            Quality engineering leadership
-          </Text>
-          <Heading className="mt-6" size="xl">
-            Goldi Saini helps teams scale quality engineering with modern automation.
-          </Heading>
-          <Text className="mt-6" variant="lead">
-            Build reliable platforms, improve release confidence, and communicate engineering strategy clearly.
+          <SectionHeader
+            eyebrow={content.eyebrow}
+            title={content.title}
+            description={content.description}
+          />
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+            <Button size="lg">{content.primaryCtaLabel}</Button>
+            <Button variant="outline" size="lg">
+              {content.secondaryCtaLabel}
+            </Button>
+          </div>
+          <Text className="mt-6" variant="muted">
+            {content.footerText}
           </Text>
         </div>
       </Container>
