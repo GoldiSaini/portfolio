@@ -16,7 +16,7 @@ type TrustIndicatorsProps = {
 
 export default function TrustIndicators({ items }: TrustIndicatorsProps) {
   return (
-    <Section className="pb-16 pt-10 sm:pt-14" variant="default">
+    <Section id="trust-indicators" className="pb-16 pt-10 sm:pt-14" variant="default">
       <Container>
         <SectionHeader
           eyebrow="Trust indicators"

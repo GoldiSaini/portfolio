@@ -40,6 +40,30 @@ export type PhilosophyItem = {
   description: string
 }
 
+export type SectionLink = {
+  href: string
+  title: string
+  description: string
+}
+
+export const sectionLinks: SectionLink[] = [
+  {
+    href: "#trust-indicators",
+    title: "Trust indicators",
+    description: "How I help teams deliver stable, observable quality systems.",
+  },
+  {
+    href: "#engineering-philosophy",
+    title: "Engineering philosophy",
+    description: "The principles used to build sustainable quality practices.",
+  },
+  {
+    href: "#core-expertise",
+    title: "Core expertise",
+    description: "The skills and systems I bring to execution and strategy.",
+  },
+]
+
 export const philosophyItems: PhilosophyItem[] = [
   {
     title: "Quality as an investment",

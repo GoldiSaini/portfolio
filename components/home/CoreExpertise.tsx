@@ -16,7 +16,7 @@ type CoreExpertiseProps = {
 
 export default function CoreExpertise({ items }: CoreExpertiseProps) {
   return (
-    <Section className="pb-16 pt-10 sm:pt-14" variant="default">
+    <Section id="core-expertise" className="pb-16 pt-10 sm:pt-14" variant="default">
       <Container>
         <SectionHeader
           eyebrow="Core expertise"

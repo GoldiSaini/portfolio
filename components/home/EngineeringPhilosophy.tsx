@@ -10,7 +10,7 @@ type EngineeringPhilosophyProps = {
 
 export default function EngineeringPhilosophy({ items }: EngineeringPhilosophyProps) {
   return (
-    <Section className="pb-16 pt-10 sm:pt-14" variant="default">
+    <Section id="engineering-philosophy" className="pb-16 pt-10 sm:pt-14" variant="default">
       <Container>
         <SectionHeader
           eyebrow="Engineering philosophy"
