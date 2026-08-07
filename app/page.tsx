@@ -1,12 +1,9 @@
-import Container from "@/components/common/Container";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (
     <main>
-      <Container>
-        <h1>Goldi Saini</h1>
-        <p>Lead Quality Engineer</p>
-      </Container>
+      <Hero />
     </main>
   );
 }
