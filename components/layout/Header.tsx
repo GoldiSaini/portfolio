@@ -31,6 +31,11 @@ export default function Header() {
                 </a>
               </li>
               <li>
+                <a href="#case-studies" className="text-muted-foreground hover:text-foreground">
+                  Case studies
+                </a>
+              </li>
+              <li>
                 <a href="#engineering-philosophy" className="text-muted-foreground hover:text-foreground">
                   Philosophy
                 </a>
@@ -54,6 +59,11 @@ export default function Header() {
               <li>
                 <a href="#trust-indicators" className="block text-muted-foreground hover:text-foreground">
                   Trust
+                </a>
+              </li>
+              <li>
+                <a href="#case-studies" className="block text-muted-foreground hover:text-foreground">
+                  Case studies
                 </a>
               </li>
               <li>
